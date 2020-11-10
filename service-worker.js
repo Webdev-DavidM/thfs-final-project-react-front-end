@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/thfs-final-project-react-front-end/precache-manifest.b4c458212c0afebe483fb548bf8d79f3.js"
+  "/thfs-final-project-react-front-end/precache-manifest.46bb3c0fafbe63dbe0b763a755566385.js"
 );
 
 self.addEventListener('message', (event) => {
