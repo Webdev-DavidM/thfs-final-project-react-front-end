@@ -13,7 +13,7 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1"
   },
-  "homepage": "http://{Github-username}.github.io/{Github-repo-name}",
+  "homepage": "http://webdev-davidm.github.io.github.io/thfs-final-project-react-front-end/",
   "scripts": {
     "start": "react-scripts start",
     "predeploy": "npm run build",
