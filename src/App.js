@@ -26,7 +26,7 @@ const CreateCourseWithContext = withContext(CreateCourse);
 const UpdateCourseWithContext = withContext(UpdateCourse);
 
 export default () => (
-  <Router>
+  <Router basename={process.env.PUBLIC_URL}>
     <div>
       <HeaderWithContext />
 
