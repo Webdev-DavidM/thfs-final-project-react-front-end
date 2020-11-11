@@ -15,7 +15,6 @@ import Error from "./components/Error";
 import ModalBox from "./components/ModalBox";
 import withContext from "./Context";
 import PrivateRoute from "./PrivateRoute";
-import Modal from "react-bootstrap/Modal";
 
 const HeaderWithContext = withContext(Header);
 const UserSignUpWithContext = withContext(UserSignUp);

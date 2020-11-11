@@ -10,9 +10,8 @@ function ModalBox(props) {
           This website allows users to browse available courses. If you are
           signed in and have created a course, when you click on that course to
           view it, you can edit and delete it. You can view other people's
-          course but can't edit or delete them. To play around with it you can
-          create your own user to create a course, or sign in as
-          david@mulholland.com, password easy123 if you want to edit my courses.
+          course but can't edit or delete them. To play around with it, create a
+          user and create a course!
         </h2>
 
         <Button variant="primary" onClick={() => props.close()}>
