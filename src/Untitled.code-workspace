@@ -10,5 +10,12 @@
       "path": "../../../../../Downloads/full_stack_app_with_react_and_a_rest_api-v1/mockups"
     }
   ],
-  "settings": {}
+  "settings": {
+    "emmet.includeLanguages": {
+      "javascript": "javascriptreact"
+    },
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.copyWithSyntaxHighlighting": false
+  }
 }
