@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/thfs-final-project-react-front-end/static/css/main.26217f7e.chunk.css",
-    "main.js": "/thfs-final-project-react-front-end/static/js/main.9b60c32c.chunk.js",
-    "main.js.map": "/thfs-final-project-react-front-end/static/js/main.9b60c32c.chunk.js.map",
+    "main.css": "/thfs-final-project-react-front-end/static/css/main.189b727f.chunk.css",
+    "main.js": "/thfs-final-project-react-front-end/static/js/main.3c005c39.chunk.js",
+    "main.js.map": "/thfs-final-project-react-front-end/static/js/main.3c005c39.chunk.js.map",
     "runtime-main.js": "/thfs-final-project-react-front-end/static/js/runtime-main.bc2a7b65.js",
     "runtime-main.js.map": "/thfs-final-project-react-front-end/static/js/runtime-main.bc2a7b65.js.map",
-    "static/js/2.50468865.chunk.js": "/thfs-final-project-react-front-end/static/js/2.50468865.chunk.js",
-    "static/js/2.50468865.chunk.js.map": "/thfs-final-project-react-front-end/static/js/2.50468865.chunk.js.map",
+    "static/js/2.3ebddd17.chunk.js": "/thfs-final-project-react-front-end/static/js/2.3ebddd17.chunk.js",
+    "static/js/2.3ebddd17.chunk.js.map": "/thfs-final-project-react-front-end/static/js/2.3ebddd17.chunk.js.map",
     "index.html": "/thfs-final-project-react-front-end/index.html",
-    "precache-manifest.78f6f94940dab20965a0ed46da0865de.js": "/thfs-final-project-react-front-end/precache-manifest.78f6f94940dab20965a0ed46da0865de.js",
+    "precache-manifest.3e7090cb113f004427c500df68d2f727.js": "/thfs-final-project-react-front-end/precache-manifest.3e7090cb113f004427c500df68d2f727.js",
     "service-worker.js": "/thfs-final-project-react-front-end/service-worker.js",
-    "static/css/main.26217f7e.chunk.css.map": "/thfs-final-project-react-front-end/static/css/main.26217f7e.chunk.css.map",
-    "static/js/2.50468865.chunk.js.LICENSE.txt": "/thfs-final-project-react-front-end/static/js/2.50468865.chunk.js.LICENSE.txt"
+    "static/css/main.189b727f.chunk.css.map": "/thfs-final-project-react-front-end/static/css/main.189b727f.chunk.css.map",
+    "static/js/2.3ebddd17.chunk.js.LICENSE.txt": "/thfs-final-project-react-front-end/static/js/2.3ebddd17.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.bc2a7b65.js",
-    "static/js/2.50468865.chunk.js",
-    "static/css/main.26217f7e.chunk.css",
-    "static/js/main.9b60c32c.chunk.js"
+    "static/js/2.3ebddd17.chunk.js",
+    "static/css/main.189b727f.chunk.css",
+    "static/js/main.3c005c39.chunk.js"
   ]
 }
