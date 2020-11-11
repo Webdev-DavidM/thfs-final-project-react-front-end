@@ -39,7 +39,7 @@ class App extends React.Component {
     let modal = this.state.showModal ? (
       <ModalBox close={this.closeModel} />
     ) : null;
-    console.log(modal);
+
     return (
       <>
         <Router basename={process.env.PUBLIC_URL}>
