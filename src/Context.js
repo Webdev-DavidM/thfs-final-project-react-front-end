@@ -1,13 +1,13 @@
-import React, { Component } from 'react';
-import Cookies from 'js-cookie';
-import Data from './Data';
+import React, { Component } from "react";
+import Cookies from "js-cookie";
+import Data from "./Data";
 
 const Context = React.createContext();
 
 export class Provider extends Component {
   state = {
-    authenticatedUser: Cookies.getJSON('authenticatedUser') || null,
-    // authenticatedUser: null,
+    authenticatedUser: Cookies.getJSON("authenticatedUser") || null,
+    modalShownAlready: Cookies.getJSON("modalSeen") || false,
   };
 
   constructor() {
@@ -19,18 +19,26 @@ export class Provider extends Component {
 
   render() {
     const { authenticatedUser } = this.state;
+    const { modalShownAlready } = this.state;
     const value = {
+      modalShownAlready,
       authenticatedUser,
       data: this.data,
       actions: {
         signIn: this.signIn,
         signOut: this.signOut,
+        modalSeen: this.modalSeen,
       },
     };
     return (
       <Context.Provider value={value}>{this.props.children}</Context.Provider>
     );
   }
+
+  modalSeen = () => {
+    this.setState({ modalShownAlready: true });
+    Cookies.set("modalSeen", JSON.stringify(true), { expires: 1 });
+  };
 
   signIn = async (username, password) => {
     const user = await this.data.getUser(username, password);
@@ -44,14 +52,14 @@ export class Provider extends Component {
       // const cookieOptions = {
       //   expires: 1, // 1 day
       // };
-      Cookies.set('authenticatedUser', JSON.stringify(user), { expires: 1 });
+      Cookies.set("authenticatedUser", JSON.stringify(user), { expires: 1 });
     }
     return user;
   };
 
   signOut = () => {
     this.setState({ authenticatedUser: null });
-    Cookies.remove('authenticatedUser');
+    Cookies.remove("authenticatedUser");
   };
 }
 

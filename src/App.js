@@ -15,6 +15,7 @@ import Error from "./components/Error";
 import ModalBox from "./components/ModalBox";
 import withContext from "./Context";
 import PrivateRoute from "./PrivateRoute";
+import Provider from "./Context";
 
 const HeaderWithContext = withContext(Header);
 const UserSignUpWithContext = withContext(UserSignUp);
@@ -26,16 +27,12 @@ const CreateCourseWithContext = withContext(CreateCourse);
 const UpdateCourseWithContext = withContext(UpdateCourse);
 
 class App extends React.Component {
-  state = { showModal: true };
-
   closeModel = () => {
-    this.setState({
-      showModal: false,
-    });
+    this.props.context.actions.modalSeen();
   };
 
   render() {
-    let modal = this.state.showModal ? (
+    let modal = !this.props.context.modalShownAlready ? (
       <ModalBox close={this.closeModel} />
     ) : null;
 
