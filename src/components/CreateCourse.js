@@ -37,13 +37,13 @@ export default class CreateCourse extends Component {
       if (errors) {
         this.setState({ errors: errors.message });
       } else {
-        this.props.history.push("/");
+        this.props.history.push("thfs-final-project-react-front-end/");
       }
     });
   };
 
   cancel = (event) => {
-    this.props.history.push("/");
+    this.props.history.push("thfs-final-project-react-front-end/");
   };
 
   render() {
