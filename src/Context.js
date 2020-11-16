@@ -37,7 +37,7 @@ export class Provider extends Component {
 
   modalSeen = () => {
     this.setState({ modalShownAlready: true });
-    Cookies.set("modalSeen", JSON.stringify(true), { expires: 1 });
+    Cookies.set("modalSeen", JSON.stringify(true));
   };
 
   signIn = async (username, password) => {
@@ -52,7 +52,7 @@ export class Provider extends Component {
       // const cookieOptions = {
       //   expires: 1, // 1 day
       // };
-      Cookies.set("authenticatedUser", JSON.stringify(user), { expires: 1 });
+      Cookies.set("authenticatedUser", JSON.stringify(user));
     }
     return user;
   };
