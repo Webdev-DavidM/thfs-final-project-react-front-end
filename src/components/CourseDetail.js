@@ -29,7 +29,7 @@ export default class CourseDetail extends Component {
       this.props.context.data.deleteCourse(courseId, user).then((errors) => {
         if (errors) {
           this.setState({ errors });
-        } else this.props.history.push("thfs-final-project-react-front-end/");
+        } else this.props.history.push("/");
       });
     } else {
       this.props.history.push("/forbidden");
@@ -48,7 +48,7 @@ export default class CourseDetail extends Component {
   };
 
   returnToList() {
-    this.props.history.push("thfs-final-project-react-front-end/");
+    this.props.history.push("/");
   }
   render() {
     // the conditional rendering below will only display the delete and update course button if the authenticated user owns the course. I have checked this by comparing the authenticatedUser email address with the owner email address and if they match then rendering the buttons.
@@ -89,10 +89,7 @@ export default class CourseDetail extends Component {
                   </span>
                 )}
 
-                <a
-                  className="button button-secondary"
-                  href="thfs-final-project-react-front-end/"
-                >
+                <a className="button button-secondary" href="/">
                   Return to List
                 </a>
               </div>
