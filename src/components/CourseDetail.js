@@ -89,10 +89,7 @@ export default class CourseDetail extends Component {
                   </span>
                 )}
 
-                <a
-                  className="button button-secondary"
-                  href="thfs-final-project-react-front-end/"
-                >
+                <a className="button button-secondary" href="/">
                   Return to List
                 </a>
               </div>
