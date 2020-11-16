@@ -89,12 +89,12 @@ export default class CourseDetail extends Component {
                   </span>
                 )}
 
-                <a
+                <button
                   className="button button-secondary"
-                  href="thfs-final-project-react-front-end/"
+                  onClick={() => this.props.history.push("/")}
                 >
                   Return to List
-                </a>
+                </button>
               </div>
             </div>
           </div>
